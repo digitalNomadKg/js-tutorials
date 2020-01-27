@@ -13,10 +13,8 @@ output.push(1);
 output.push(2);
 output.push(3);
 
-//////////////////////////////////////////////////////////////////////////////////
-
 var output = [];
-var count = 0;
+var count = 1;
 
 function fizzBuzz() {
   if (count % 3 === 0 && count % 5 === 0) {
@@ -31,8 +29,6 @@ function fizzBuzz() {
   count++;
   console.log(output);
 }
-
-
 
 
 
