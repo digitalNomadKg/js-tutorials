@@ -5,3 +5,11 @@
 
 
 /////////////////////////////////////////////////////////////
+
+// separation of concers 
+/* 
+HTML for the content
+CSS for the style
+JS for the functionality, behaviour 
+
+*/
