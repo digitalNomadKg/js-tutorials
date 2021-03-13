@@ -1,0 +1,39 @@
+.newStyleH1{
+  font-size: 10rem;
+  color: purple;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.margin100{
+  margin: 5px;
+  text-align: center;
+}
+
+.btn1{
+  text-align: center;
+  font-size: 25px;
+  padding: 2rem;
+  background-color: lightcoral;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 1rem;
+  border-color: lightcoral;
+  margin: 1rem;
+  border:none;
+  
+}
+
+.btn1:hover{
+  background-color: lightskyblue;
+  border-color: 0;
+  border:none;
+  font-style: normal;
+    
+  }
+
+.btn1:active{
+background-color: lightgreen;
+border-color: 0;
+border:none;
+font-style: normal;
+  
+}
