@@ -9,21 +9,25 @@
   text-align: center;
 }
 
+.buttons{
+  margin:0 10% 0 10%;
+  text-align: center;
+}
+
 .btn1{
   text-align: center;
   font-size: 25px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: lightcoral;
   font-family: 'Courier New', Courier, monospace;
   border-radius: 1rem;
-  border-color: lightcoral;
-  margin: 1rem;
   border:none;
+ 
   
 }
 
 .btn1:hover{
-  background-color: lightskyblue;
+  background-color: lightyellow;
   border-color: 0;
   border:none;
   font-style: normal;
@@ -32,8 +36,23 @@
 
 .btn1:active{
 background-color: lightgreen;
-border-color: 0;
+border-color: #ffff;
 border:none;
 font-style: normal;
-  
+border-width: none;
+border-style: none;
+}
+
+.angerTagSearch{
+  font-size: 25px;
+  font-style: normal;
+}
+
+.btn1:focus{
+  border: none;
+  outline: none;
+}
+
+.h1Hover:hover{
+  cursor: pointer;
 }

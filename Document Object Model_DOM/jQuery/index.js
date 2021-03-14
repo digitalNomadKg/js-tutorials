@@ -14,4 +14,60 @@ console.log($("h1").hasClass("margin100"));
 
 $("button").addClass("btn1");
 
-// $("button:active").console.log(alert("This button was pressed"));
+// /////////////////////////////////////////////////////////////////////////////
+
+// $(document.querySelector("button").addEventListener("click", function () {
+//   alert("This button was clicked");
+// }));
+// in this case only 1 button will be clicked
+
+// var allButtons = $(".buttons").length;
+// for (var b = 0; b < allButtons; b++) {
+//   $(".buttons")[b].addEventListener("click", clickedButton);
+//   function clickedButton() {
+//     alert("This button was clicked");
+//   }
+// }
+// Much easier way to add same fuction for click method above: we need to add event listener useng $
+
+// $(".buttons").click(function () {
+//   alert("This button was pressed by using Evet Listener via using $");
+// })
+
+// applying $ for attrubites in html
+$("a").attr("href", "https://yahoo.com");
+
+$("a").addClass("angerTagSearch");
+
+$(".header").addClass("h1Hover");
+
+
+// keypress event
+$("input").keypress(function (event) {
+  $(".alert").text(event.key)
+});
+
+// document.querySelector(".header").click(function(){
+//   alert("clicked");
+// });
+
+
+// $(".header").click(function(){
+//  this.innerHTML= "it is clicked now";
+// });
+
+// to log Date
+// $(".header").click(function(){
+//   var count = new Date();
+//   console.log(count);
+// });
+
+//mouseover
+// $("h1").on("mouseover", function () {
+//   $("h1").css("color", "coral");
+// });
+
+//animation / hide/ show/ toggle/ fadeIn/ fadeOut/ fadeToggle/ slideUp/ slideDown/ slideToggle
+$("button").click(function(){
+$("h1").slideToggle();
+});
