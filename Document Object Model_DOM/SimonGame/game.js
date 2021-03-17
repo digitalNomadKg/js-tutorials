@@ -12,3 +12,4 @@ function nextSequence() {
 
 gamePattern.push(randomChosenColour);
 
+// $("button").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
