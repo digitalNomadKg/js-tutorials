@@ -49,3 +49,12 @@ function animatePress(currentColour) {
   $("#").addClass("pressed");
   console.log("this is working")
 }
+
+
+// function Car(model, productionYear){
+//   this.model = model;
+//   this.productionYear = productionYear;
+// }
+
+// var newCar = new Car('Mercedes-Benz', '2021');
+// newCar();
