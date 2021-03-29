@@ -9,7 +9,9 @@ let userClickedPattern = [];
 $(".btn").click(function () {
   let userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
-  console.log(userClickedPattern);
+  playSound(userChosenColour);
+  animatePress(userChosenColour);
+
 });
 
 function nextSequence() {
@@ -17,44 +19,39 @@ function nextSequence() {
   let randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour);
 
-  $("#" + randomChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  playSound(randomChosenColour);
 
 }
 
-$("#green").click(function () {
-  var addAudio = new Audio("sounds/green.mp3");
-  addAudio.play();
-});
-
-$("#red").click(function () {
-  var addAudio = new Audio("sounds/red.mp3");
-  addAudio.play();
-});
-
-$("#blue").click(function () {
-  var addAudio = new Audio("sounds/blue.mp3");
-  addAudio.play();
-});
-
-$("#yellow").click(function () {
-  var addAudio = new Audio("sounds/yellow.mp3");
-  addAudio.play();
-});
-
-// let audio = new Audio("sounds/" + randomChosenColour + ".mp3");
-// audio.play();
-
+function playSound(name) {
+  let audio = new Audio("sounds/" + name + ".mp3");
+  audio.play();
+}
 
 function animatePress(currentColour) {
-  $("#").addClass("pressed");
-  console.log("this is working")
+  $("#" + currentColour).addClass("pressed");
+
+  setTimeout(function () {
+    $("#" + currentColour).removeClass("pressed")
+  }, 100);
 }
 
+//////////////////////////////////////////////////////////////////
 
-// function Car(model, productionYear){
-//   this.model = model;
-//   this.productionYear = productionYear;
-// }
+$(document).ready(function () {
+  $(document).keydown(function () {
+    nextSequence($("h1").html("Level " + level))
+  });
+});
 
-// var newCar = new Car('Mercedes-Benz', '2021');
-// newCar();
+let level = 0;
+
+// for (var i = 0; i < level; i++) {
+//   $(document).keydown(function () {
+//     $("h1").html("Level" + level);
+//     console.log(level);
+//   });
+//  };
+
+
