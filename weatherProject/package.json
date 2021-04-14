@@ -1,0 +1,17 @@
+{
+  "name": "weatherproject",
+  "version": "1.0.0",
+  "description": "testing API",
+  "main": "serves.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Tim kirves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
