@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 9000;
+const port = 3000;
 
 app.listen(process.env.PORT || port, function () {
-  console.log("Local host is running on port: 9000");
+  console.log("Local host is running on port: 3000");
 });
 
 const https = require("https");
@@ -46,7 +46,7 @@ app.post("/", function (req, res) {
 
   const options = {
     method: "POST",
-    auth: "timKirves:247228949bb8742030794e5f8cf195f0-us1"
+    auth: "timKirves:" //post API key here 
   }
 
   const request = https.request(url, options, function (response) {
@@ -55,6 +55,7 @@ app.post("/", function (req, res) {
       res.sendFile(__dirname + "/success.html");
     } else {
       res.sendFile(__dirname + "/failure.html");
+      console.log("API key is disabled");
     }
 
 
