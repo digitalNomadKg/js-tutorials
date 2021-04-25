@@ -1,7 +1,7 @@
 //BMI calculator
 
 
-var bmi = bmiCalculator(123, 2);
+var bmi = bmiCalculator();
 function bmiCalculator(weight, height) {
   var bmi = weight / Math.pow(height, 2);
 

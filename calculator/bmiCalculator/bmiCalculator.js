@@ -1,13 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 4000;
+const port = 5005;
 
 app.use(bodyParser.urlencoded({ embeded: true }));
+app.use(express.static('public'));
 
 
 app.listen(port, function () {
-  console.log("The local server is running on port:4000");
+  console.log("The local server is running on port:5005");
 });
 
 app.get("/", function (req, res) {
@@ -21,8 +22,8 @@ app.get("/", function(req, res) {
 
 app.post("/", function (req, res) {
 
-  let weight = Number(req.body.weight);
-  let height = Number(req.body.height);
+  let weight = parseFloat(req.body.weight);
+  let height = parseFloat(req.body.height);
 
   console.log("Hello it is workign");
 

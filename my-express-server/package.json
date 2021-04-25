@@ -1,0 +1,18 @@
+{
+  "name": "my-express-server",
+  "version": "1.0.0",
+  "description": "My first express server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[B"
+  ],
+  "author": "Tim Kirves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
